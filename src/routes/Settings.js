@@ -2,6 +2,8 @@ import React from 'react';
 import pp from "../images/pp.jpg";
 import sig from "../images/sig.jpg";
 import "../styles/settings.css";
+import Button from "../components/common/Button";
+import FileInput from "../components/common/FileInput";
 
 const Settings = () => {
   return (
@@ -23,9 +25,10 @@ const Settings = () => {
                 </div>
               </div>
               <div class="col-6 id d-flex flex-column  justify-content-center">
-                <label class="file-input-label outer-shadow-sm" for="profile-pic">Select Profile Pic <i class="fas fa-angle-down ml-auto gw-accent-color"></i></label>
-                <input class='file-input' type="file" name="profile-pic" id="profile-pic" />
-                <button type="button" class="btn btn-sm btn-gw-primary"><i class="fas fa-upload"></i> Upload</button>
+                {/* <label class="file-input-label outer-shadow-sm" for="profile-pic">Select Profile Pic <i class="fas fa-angle-down ml-auto gw-accent-color"></i></label>
+                <input class='file-input' type="file" name="profile-pic" id="profile-pic" /> */}
+                <FileInput />
+                <Button className="btn btn-sm btn-gw-primary" innerText={<span><i class="fas fa-upload"></i> Upload</span>} />                
               </div>
 
             </div>
@@ -40,7 +43,7 @@ const Settings = () => {
               <div class="col-6 id d-flex flex-column r justify-content-center">
                 <label class="file-input-label outer-shadow-sm" for="profile-pic">Select Signature  <i class="fas fa-angle-down ml-auto gw-accent-color"></i></label>
                 <input class='file-input' type="file" name="profile-pic" id="profile-pic" />
-                <button type="button" class="btn btn-sm btn-gw-primary"><i class="fas fa-upload"></i> Upload</button>
+                <Button className="btn btn-sm btn-gw-primary" innerText={<span><i class="fas fa-upload"></i> Upload</span>} />                
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ const DashboardPage = () => {
   return (
     <div>
       <section className="d-flex px-2">
-        <a href="" className="align-self-center brand-name d-lg-none">gwapp</a>
+        <a href="#0" className="align-self-center brand-name d-lg-none">gwapp</a>
         <a className="ml-auto rounded-circle inner-outer-shadow logout-icon">
           <i className="fas fa-power-off"></i>
         </a>
@@ -87,16 +87,11 @@ const DashboardPage = () => {
               </div>
             </div>
             <div className="col-lg-3 d-flex align-items-center action-container">
-              <button className="action-btn btn btn-gw-circle outer-shadow">
-                <i className="fas fa-pen"></i>
-              </button>
-              <button className="action-btn btn btn-gw-circle outer-shadow">
-                <i className="fas fa-trash del-icon"></i>
-              </button>
-              <button className="action-btn btn btn-gw-circle outer-shadow">
-                <i className="fas fa-bell"></i>
-                <span className="badge shadow-none">2</span>
-              </button>
+              <Button className="action-btn btn btn-gw-circle outer-shadow" innerText={<i className="fas fa-pen"></i>} />
+              <Button className="action-btn btn btn-gw-circle outer-shadow" innerText={<i className="fas fa-trash del-icon"></i>} />
+              <Button className="action-btn btn btn-gw-circle outer-shadow" innerText={
+                <span><i className="fas fa-bell"></i><span className="badge shadow-none">2</span></span>
+              } />
             </div>
           </div>
           <div className="row mt-5 py-3 mx-0 mx-lg-2">
@@ -115,16 +110,11 @@ const DashboardPage = () => {
               </div>
             </div>
             <div className="col-lg-3 d-flex align-items-center action-container">
-              <button className="action-btn btn btn-gw-circle outer-shadow">
-                <i className="fas fa-check success-icon"></i>
-              </button>
-              <button className="action-btn btn btn-gw-circle outer-shadow">
-                <i className="fas fa-bell"></i>
-                <span className="badge shadow-none">2</span>
-              </button>
-              <button className="action-btn btn btn-gw-circle outer-shadow">
-                <i className="fas fa-print print-icon"></i>
-              </button>
+              <Button className="action-btn btn btn-gw-circle outer-shadow" innerText={<i className="fas fa-check success-icon"></i>} />
+              <Button className="action-btn btn btn-gw-circle outer-shadow" innerText={
+                <span><i className="fas fa-bell"></i><span className="badge shadow-none">2</span></span>
+              } />
+              <Button className="action-btn btn btn-gw-circle outer-shadow" innerText={<i className="fas fa-print print-icon"></i>} />
             </div>
           </div>
           <div className="row mt-5 py-3 mx-0 mx-lg-2">
@@ -143,15 +133,9 @@ const DashboardPage = () => {
               </div>
             </div>
             <div className="col-lg-3 d-flex align-items-center action-container">
-              <button className="action-btn btn btn-gw-circle outer-shadow">
-                <i className="far fa-money-bill-alt success-icon"></i>
-              </button>
-              <button className="action-btn btn btn-gw-circle outer-shadow">
-                <i className="fas fa-trash del-icon"></i>
-              </button>
-              <button className="action-btn btn btn-gw-circle outer-shadow">
-                <i className="fas fa-print print-icon"></i>
-              </button>
+              <Button className="action-btn btn btn-gw-circle outer-shadow" innerText={<i className="far fa-money-bill-alt success-icon"></i>} />
+              <Button className="action-btn btn btn-gw-circle outer-shadow" innerText={<i className="fas fa-trash del-icon"></i>} />
+              <Button className="action-btn btn btn-gw-circle outer-shadow" innerText={<i className="fas fa-print print-icon"></i>} />
             </div>
           </div>
         </div>
