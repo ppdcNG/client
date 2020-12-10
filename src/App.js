@@ -1,8 +1,13 @@
+import { Switch, Route } from 'react-router-dom';
+import Dashboard from './routes/Dashboard';
+import Landing from "./routes/Landing";
+
 function App() {
   return (
-    <div>
-      [drumrolls] Gwapp 2.1 !!!
-    </div>
+    <Switch>
+      <Route exact path="/" component={Landing} />
+      <Route path="/dashboard" component={Dashboard} />
+    </Switch>
   );
 }
 
